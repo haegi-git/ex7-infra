@@ -56,4 +56,4 @@ jobs:
 # 3-7. 인프라 반영 (apply / destroy)
       - name: Terraform Apply & Destroy
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-        run: terraform apply -auto-approve
+        run: terraform destroy -auto-approve
