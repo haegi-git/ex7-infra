@@ -4,7 +4,6 @@ name: Terraform CI/CD Pipeline
 on:
   push:
     branches: [main]
-      - main: 
   #   paths:
   #     - 'infra/project/**'
   #       - 'project/**'
