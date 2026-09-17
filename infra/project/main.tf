@@ -4,5 +4,5 @@ resource "aws_vpc" "this" {
   instance_tenancy     = "default"
   enable_dns_support   = "true"
   enable_dns_hostnames = "true"
-  tags                 = { Name = "std11-ex7-vpc" }
+  tags                 = { Name = "std11-test-vpc" }
 }
