@@ -4,8 +4,8 @@ name: Terraform CI/CD Pipeline
 on:
   push:
     branches: [main]
-  #   paths:
-  #     - 'infra/project/**'
+    paths:
+      - 'infra/project/**'
   #       - 'project/**'
 # pull_request:
 #   branches: [main]
@@ -56,4 +56,4 @@ jobs:
 # 3-7. 인프라 반영 (apply / destroy)
       - name: Terraform Apply & Destroy
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-        run: terraform destroy -auto-approve
+        run: terraform apply -auto-approve
