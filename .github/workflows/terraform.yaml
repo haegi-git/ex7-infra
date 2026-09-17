@@ -56,4 +56,4 @@ jobs:
         continue-on-error: false # 에러 발생시 계속진행(true) 또는 중단(false)
 # 3-7. 인프라 반영 (apply / destroy)
       - name: Terraform Apply & Destroy
-        run: terraform apply
+        run: terraform apply -auto-approve
